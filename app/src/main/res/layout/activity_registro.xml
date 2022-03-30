@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/registro"
+    tools:context="com.example.frasser.masterteach.RegistroActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <Switch
+            android:id="@+id/switch_tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/switch_tipo"
+            android:text="@string/txt_alumno"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch_tipo"
+            android:layout_marginEnd="14dp"
+            android:layout_toStartOf="@+id/switch_tipo"
+            android:text="@string/txt_profe"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spn_tipo_docu"
+
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_numero_docu"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/edit_text"
+                android:ems="10"
+
+
+                android:hint="@string/hint_numero_documento"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="#696154" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layo2"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_nombre"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/hint_nombre"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#696154" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layo3"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_apellidos"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/hint_apellido"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#696154" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layo4"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_contra_registro"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#696154" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layo6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layo5"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/edt_confirmar_contra"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/hint_confirmar_contra"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#696154" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layo7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layo6"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_mail"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/hint_mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="#696154" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="@string/txt_tipo_docu"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spn_tipo_docu"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignEnd="@+id/btn_registrar"
+            android:layout_below="@+id/textView4"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="@string/txt_btn_registrar"
+            android:textColor="@android:color/background_light"
+            android:paddingLeft="5dp"
+            android:onClick="crearUsuario"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/layo7"
+            android:layout_marginTop="33dp"
+            android:paddingLeft="5dp"
+            android:text="@string/txt_cv"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginStart="23dp"
+            android:text="@string/txt_examinar" />
+
+        <Button
+            android:id="@+id/btn_subir_hv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:background="@mipmap/carpeta"
+            android:onClick="pickFile" />
+
+        <TextView
+            android:id="@+id/ruta"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/btn_subir_hv"
+            android:layout_toStartOf="@+id/btn_subir_hv"
+            android:textSize="10sp" />
+        <RelativeLayout
+            android:id="@+id/container_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_above="@+id/btn_registrar"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="21dp">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

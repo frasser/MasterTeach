@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frasser.masterteach.MenuPrincipalActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@drawable/cabecera">
+
+
+            <EditText
+                android:id="@+id/edt_campo_busqueda"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/edit_text"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:hint="ENGLISH"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/edt_campo_busqueda"
+                android:layout_toEndOf="@+id/edt_campo_busqueda"
+                android:background="@android:color/transparent"
+                android:src="@drawable/search_icon" />
+
+            <ImageButton
+                android:id="@+id/btn_logout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:background="@mipmap/logout"
+                android:onClick="cerrarSesion" />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listViewCustome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:foregroundGravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"></ListView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

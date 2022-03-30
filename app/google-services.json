@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "619223583112",
+    "firebase_url": "https://master-teach.firebaseio.com",
+    "project_id": "master-teach",
+    "storage_bucket": "master-teach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619223583112:android:2915b9822d752aaa",
+        "android_client_info": {
+          "package_name": "com.example.frasser.masterteach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619223583112-hld32uqohk7f14hkq94v7rnhjvn2uao8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXQVXPeQq-yDZW1d96PAY331_vCdcF18U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

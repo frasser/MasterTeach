@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.frasser.masterteach"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+
+    implementation 'com.google.firebase:firebase-database:11.0.4' // agrego esta linea de implementacion para base de datos de firebase
+
+    compile 'com.google.firebase:firebase-auth:11.0.4'      // linea agragada para realizar autenticacion con correos
+
+    compile 'com.google.android.gms:play-services-auth:11.0.4'  // lineas agregadas para realizar autenticaciones
+    compile 'com.google.firebase:firebase-storage:11.0.4'  // linea que se agrega para utilizar el storage
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4' //linea agregada para libreria de google play service para google maps
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.2'  // se trae esta linea para conexion con Gson
+    compile 'com.google.maps.android:android-maps-utils:0.4+' // libreria que permite descifrar codigo de json que trae d cifrado la ruto de google map
+    compile 'com.google.firebase:firebase-messaging:11.0.4' //libreria utilizada para envio de mensages con cloud messaging
+
+
+}
+apply plugin: 'com.google.gms.google-services' // agrego esta otra linea para firebase

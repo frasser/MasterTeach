@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_menu">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/txt_nombre_profesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:text="Nombre profesor"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+
+            android:id="@+id/estrella1"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_nombre_profesor"
+            android:layout_toEndOf="@+id/imageView2"
+            android:tag="1"
+            android:layout_marginLeft="5dp"
+
+
+            android:theme="@style/checkBoxStyle" />
+
+        <CheckBox
+            android:id="@+id/estrella2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/estrella1"
+            android:layout_toEndOf="@+id/estrella1"
+            style="?android:attr/starStyle"
+            android:tag="2"
+            android:theme="@style/checkBoxStyle"
+
+
+
+
+             />
+
+        <CheckBox
+            android:id="@+id/estrella3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/estrella2"
+            android:layout_toEndOf="@+id/estrella2"
+            style="?android:attr/starStyle"
+            android:tag="3"
+            android:theme="@style/checkBoxStyle"
+
+
+
+            />
+
+        <CheckBox
+            android:id="@+id/estrella4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/estrella3"
+            android:layout_toEndOf="@+id/estrella3"
+            style="?android:attr/starStyle"
+            android:tag="4"
+            android:theme="@style/checkBoxStyle"
+
+             />
+
+        <CheckBox
+            android:id="@+id/estrella5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/estrella4"
+            android:layout_toEndOf="@+id/estrella4"
+            style="?android:attr/starStyle"
+            android:tag="5"
+            android:theme="@style/checkBoxStyle"
+             />
+
+        <TextView
+            android:id="@+id/txt_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/estrella1"
+            android:layout_below="@+id/estrella1"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_alignTop="@+id/imageView4"
+            app:srcCompat="@mipmap/precio" />
+
+        <TextView
+            android:id="@+id/txt_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_marginEnd="19dp"
+            android:layout_toStartOf="@+id/imageView4"
+            android:text="30000"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_toEndOf="@+id/estrella2"
+            app:srcCompat="@mipmap/cronografo" />
+
+        <TextView
+            android:id="@+id/txt_horas_experiencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_descripcion"
+            android:layout_toStartOf="@+id/estrella5"
+            android:text="1900"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_horas_experiencia"
+            android:layout_toEndOf="@+id/imageView4"
+            android:text="@string/txt_horas"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txt_descripcion"
+            android:layout_alignEnd="@+id/txt_descripcion"
+            android:background="@drawable/redondeado"
+            android:text="@string/txt_btn_solicitar_clase"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:onClick="pedirClase"
+            />
+
+        <ImageView
+            android:id="@+id/img_hv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_toEndOf="@+id/estrella5"
+            android:background="@mipmap/vitae" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_descripcion"
+            android:layout_toEndOf="@+id/img_hv"
+            android:text="@string/txt_ver"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_horas_experiencia"
+            android:layout_toEndOf="@+id/img_hv"
+            android:text="@string/txt_hv"
+            android:textSize="12sp"
+            android:paddingLeft="2dp"/>
+
+        <Button
+            android:id="@+id/btn_hv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_alignStart="@+id/img_hv"
+            android:layout_alignTop="@+id/img_hv"
+            android:background="@android:color/transparent" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

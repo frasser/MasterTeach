@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Master Teach</string>
+
+
+
+
+    /////////////Login//////////////////////////
+    <string name="primer_mensaje">¡Vamos a empezar!</string>
+    <string name="segundo_mensaje">Ingresa tus datos</string>
+    <string name="usu">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="txt_btn_">Ingresar</string>
+    <string name="txt_olvido">Olvidaste tu contraseña? </string>
+
+    //////////////REGISTRO/////////////////////
+    <string name="txt_profe">Profesor  </string>
+    <string name="txt_alumno">Alumno  </string>
+    <string name="txt_tipo_docu">Tipo documento:</string>
+    <string name="hint_numero_documento">Numero documento</string>
+    <string name="hint_edad">Edad</string>
+    <string name="txt_forma_pago">Forma de pago:</string>
+    <string name="hint_confirmar_contra">Confirmar contraseña</string>
+    <string name="hint_mail">Correo electronico</string>
+    <string name="hint_nombre">Nombres</string>
+    <string name="hint_apellido">Apellidos</string>
+    <string name="txt_tema">Tema principal:</string>
+    <string name="txt_cv">Hoja de vida:</string>
+    <string name="txt_btn_registrar">REGISTRAR</string>
+    <string name="txt_examinar">Examinar</string>
+
+    /////////////// AGENDAR //////////////////////////
+    <string name="txt_modalidad">Modalidad:</string>
+    <string name="txt_ubicacion">Enviar ubicacion</string>
+    <string name="txt_foto">Foto Alumno</string>
+    <string name="hint_telefono">Telefono contacto</string>
+    <string name="txt_btn_solicitar">Solicitar</string>
+    <string name="txt_locacion">Mi posicion</string>
+    <string name="txt_subir_foto">Subir fotografia</string>
+
+    ////////////////// PRINCIPAL ///////////////////////////
+    <string name="txt_horas">Horas exp.</string>
+    <string name="txt_btn_solicitar_clase">Solicitar clase</string>
+    <string name="txt_ver">Ver hoja</string>
+    <string name="txt_hv">de vida</string>
+
+    ////////////////// PERFIL /////////////////////////////
+    <string name="txt_tema_principal">Tema principal:</string>
+    <string name="txt_perfil_profesional">Perfil Profesional:</string>
+    <string name="txt_hora_experiencia">Horas de experiencia:</string>
+    <string name="txt_precio_hora">Precio por hora:</string>
+    <string name="txt_btn_guardarCambio">Guardar cambios</string>
+
+
+
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/perfil_profesor"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imagn_perfil"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="442dp"
+            android:src="@mipmap/usuario" />
+
+        <ImageButton
+            android:id="@+id/btn_editar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@+id/imagn_perfil"
+            android:background="@mipmap/editar"
+            android:onClick="irEditar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_mensaje"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btn_editar"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/mensaje"
+            tools:layout_editor_absoluteX="347dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <TextView
+            android:id="@+id/txt_nombres_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_editar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="107dp"
+            android:background="@color/colorAccent"
+            android:text="mario checho"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_light"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_nombres_perfil"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/txt_tema_principal" />
+
+        <TextView
+            android:id="@+id/txt_tematica_plano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btn_editar"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/textView10"
+            />
+
+        <TextView
+            android:id="@+id/texto_plano"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignStart="@+id/txt_tematica_plano"
+            android:layout_below="@+id/txt_tematica_plano"
+            android:layout_marginTop="33dp"
+            android:text="@string/txt_perfil_profesional" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/texto_plano"
+            android:layout_below="@+id/texto_plano"
+            android:layout_marginTop="24dp"
+            android:text="@string/txt_hora_experiencia" />
+
+        <TextView
+            android:id="@+id/txt_cantidad_horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/texto_plano"
+            android:layout_alignTop="@+id/textView16"
+             />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="13dp"
+            android:text="@string/txt_precio_hora" />
+
+        <TextView
+            android:id="@+id/txt_precio_fijado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_toEndOf="@+id/textView12"
+             />
+
+        <RelativeLayout
+            android:id="@+id/container_fragment_editar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_logout_perfil"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginEnd="31dp"
+                android:layout_marginTop="160dp"
+                android:background="@mipmap/logout"
+                android:onClick="cerrarSesionPerfil" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

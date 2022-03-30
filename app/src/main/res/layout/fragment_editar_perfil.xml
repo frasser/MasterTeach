@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagen_foto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/usuario"/>
+
+        <TextView
+            android:id="@+id/txt_nombres_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imagen_foto"
+            android:text="mario checho"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/background_light"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_nombres_perfil"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/txt_tema_principal" />
+
+        <Spinner
+            android:id="@+id/spn_tematica_perfil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btn_editar"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/textView10"
+            android:text="TextView"
+            android:spinnerMode="dialog"/>
+
+        <EditText
+            android:id="@+id/texto_plano"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="textMultiLine"
+
+            android:maxLines="4"
+            android:maxLength="90"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:gravity="top|left"
+
+            android:hint="ingrese texto describiendo su perfil profesional"
+            />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignStart="@+id/spn_tematica_perfil"
+            android:layout_below="@+id/spn_tematica_perfil"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_perfil_profesional" />
+
+
+        <Button
+            android:id="@+id/btn_guardarCambios"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imagen_foto"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/redondeado"
+            android:text="@string/txt_btn_guardarCambio"
+            android:textColor="@android:color/background_light"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/imagen_foto"
+            app:srcCompat="@mipmap/camara" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/layout_animacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_plano"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/edt_experiencia"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+
+                android:hint="Horas exp."
+                android:layout_marginRight="45dp"
+                android:paddingLeft="10dp"
+                android:maxLength="5"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_animacion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_animacion"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/edt_precio_fijado"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberDecimal"
+                android:hint="Precio  P/H"
+
+                android:layout_marginRight="45dp"
+                android:paddingLeft="10dp"
+                android:maxLength="6"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btn_camara"
+            android:layout_marginTop="11dp"
+            android:text="Subir foto" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
